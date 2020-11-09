@@ -105,7 +105,7 @@ public class Tetris extends JPanel {
 		for (int i=0; i < 4; i++)
 			if (board[currentShape[i][1] + x][currentShape[i][0] + y] != backgroundColor)
 				isAtBottom = true;
-		if (!isAtBottom && x >= 0 && x < gameWidth)
+		if (!isAtBottom)
 			currentCoord[1] += a;	
 
 		repaint();
